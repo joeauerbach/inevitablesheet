@@ -1,17 +1,17 @@
 <div class="3colrow">
     <div class="col">
     	<label>Name:</label><input type="text" name="attr_character_name" />
-		<label>Level:</label><input type="text" name="attr_rank" />
+		<label>Level:</label><input type="text" name="attr_level" />
 		<label>XP:</label><input type="number" name="attr_xp" />
 	</div>
 
 	<div class="col">
-		<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/kitchensink/logo.png" />
+		<img src="https://github.com/joeauerbach/inevitablesheet/blob/master/logo.png" />
 	</div>
 
 	<div class="col">
 		<label>Setting:</label><input type="text" name="attr_setting" />
-		<label>Ancestry:</label><input type="text" name="attr_race" />
+		<label>Ancestry:</label><input type="text" name="attr_ancestry" />
 	</div>
 
 </div>
@@ -21,20 +21,23 @@
 	<div class="col">
 		<h2>Attributes</h2>
 
+		<label>Might </label><input type="text" name='attr_might' class='sheet-short'>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{might}]]}}'></button><span class='dee'>d</span>
+        <br />
 		<label>Agility </label><input type="text" name='attr_agility' class='sheet-short'>
         <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{agility}]]}}'></button><span class='dee'>d</span>
         <br />
-		<label>Smarts </label><input type="text" name='attr_smarts' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{smarts}]]}}'></button><span class='dee'>d</span>
+		<label>Endurance </label><input type="text" name='attr_endurance' class='sheet-short'>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{endurance}]]}}'></button><span class='dee'>d</span>
         <br />
-		<label>Spirit </label><input type="text" name='attr_spirit' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{spirit}]]}}'></button><span class='dee'>d</span>
+		<label>Reason </label><input type="text" name='attr_reason' class='sheet-short'>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{reason}]]}}'></button><span class='dee'>d</span>
         <br />
-		<label>Strength </label><input type="text" name='attr_strength' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{strength}]]}}'></button><span class='dee'>d</span>
+		<label>Intuition </label><input type="text" name='attr_intuition' class='sheet-short' value='25'>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{intuition}]]}}'></button><span class='dee'>d</span>
         <br />
-		<label>Vigor </label><input type="text" name='attr_vigor' class='sheet-short' value='25'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{vigor}]]}}'></button><span class='dee'>d</span>
+		<label>Presence </label><input type="text" name='attr_presence' class='sheet-short' value='25'>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{presence}]]}}'></button><span class='dee'>d</span>
         <hr />
         
         <h2">Skills</h2>
@@ -56,10 +59,9 @@
 		<h2>Derived Stats</h2>
         <div class="stats">
             <h3>Base</h3><h3>Max</h3>
-            <label>Pace</label><input type="text" name="attr_pace" /><input type="text" name="attr_pace_max"  />
-            <label>Parry</label><input type="text" name="attr_parry" /><input type="text" name="attr_parry_max" />
-            <label>Toughness</label><input type="text" name="attr_toughness"  /><input type="text" name="attr_toughness_max"  />
-            <label>Charisma</label><input type="text" name="attr_charisma" " /><input type="text" name="attr_charisma_max"  />
+            <label>Speed</label><input type="text" name="attr_speed" /><input type="text" name="attr_speed_max"  />
+            <label>Hit Points</label><input type="text" name="attr_hp" /><input type="text" name="attr_hp_max" />
+            <label>Armor</label><input type="text" name="attr_armor"  /><input type="text" name="attr_armor_max"  />
         </div>
 	</div>
 
