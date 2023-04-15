@@ -12,6 +12,7 @@
 	<div class="sheet-col">
 		<label>Setting:</label><input type="text" name="attr_setting" />
 		<label>Ancestry:</label><input type="text" name="attr_ancestry" />
+        <label>Class:</label><input type="text" name="attr_class" />
 	</div>
 
 </div>
@@ -22,22 +23,22 @@
 		<h2>Attributes</h2>
 
 		<label>Might </label><input type="text" name='attr_might' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{might}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{might}]]}}'></button><span class='dee'>d</span>
         <br />
 		<label>Agility </label><input type="text" name='attr_agility' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{agility}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{agility}]]}}'></button><span class='dee'>d</span>
         <br />
 		<label>Endurance </label><input type="text" name='attr_endurance' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{endurance}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{endurance}]]}}'></button><span class='dee'>d</span>
         <br />
 		<label>Reason </label><input type="text" name='attr_reason' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{reason}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{reason}]]}}'></button><span class='dee'>d</span>
         <br />
 		<label>Intuition </label><input type="text" name='attr_intuition' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{intuition}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{intuition}]]}}'></button><span class='dee'>d</span>
         <br />
 		<label>Presence </label><input type="text" name='attr_presence' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{presence}]]}}'></button><span class='dee'>d</span>
+        <button type='roll' name='roll_action' value='&{template:default} {{name=@{character_name}}} {{result=[[1t[Action] + @{presence}]]}}'></button><span class='dee'>d</span>
         <hr />
         
         <h2">Skills</h2>
